@@ -1,0 +1,19 @@
+section {
+    margin: 0 1.5%;
+    width: 63%;
+    border-color: black;
+    background-color: aqua;
+}
+aside {
+    float:right;
+    margin: 0 1.5%;
+    width: 30%;
+    height: 100%;
+    border-color: black;
+    background-color: green;
+}
+article {
+    float: left;
+    border-color: black;
+    background-color: blueviolet;
+}
