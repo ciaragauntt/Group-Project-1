@@ -10,30 +10,55 @@
         <h1 class="one column">MedTracker</h1>
     </div>
     <article id="calendar" class="article">
-        this is where the calendar goes.
+        <div class="calendar-container two-thirds "></div>
+        <div class="row month two-thirds column">
+            <ul>
+                <li class="prev">PREV</li>
+                <li class="next">NEXT</li>
+                <li>August<br><span style="font-size:18px">
+                        <2022/span>
+                </li>
+            </ul>
+            <ul class="weekdays 7 columns">
+                <li>Mon</li>
+                <li>Tues</li>
+                <li>Wed</li>
+                <li>Thurs</li>
+                <li>Fri</li>
+                <li>Sat</li>
+                <li>Sun</li>
+            </ul>
+            <ul class="days 7 columns">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li><span class="active">10</span></li>
+                <li>11</li>
+            </ul>
+        </div>
+        </div>
+
     </article>
     <aside id="medlist" class="sidebar">
 
         <h2>Medications</h2>
-        <input type="text" id="newMed" placeholder="New Medication...">
-
-        <ul>
-            <input type="checkbox">
-            <li>example</li>
-            <input type="checkbox">
-            <li>example</li>
-            <input type="checkbox">
-            <li>example</li>
-        </ul>
-
+        
         <button id="MedBtn" class= "button button-primary">Add New Medication</button>
         <div id="MedModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <p>what we put in the modal</p>
+                <input type="text" id="newMed" placeholder="New Medication...">
+                <button id="SaveBtn" class="button button-primary" onclick="saveUserData()">Save</button>
             </div>
-            
-        <button class="button">Edit Medication</button>
+        </div>
+
+        <button id="EditBtn" class="button button-primary">Edit Medication</button>
 
     </aside>
     <script src="script.js"></script>
