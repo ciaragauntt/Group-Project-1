@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
+    <header>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="skeleton.css">
+        <link rel="stylesheet" href="style.css">
+    </header>
 <body>
-    <link rel="stylesheet" href="style.css">
-    <section>
-        <h1>MedTracker</h1>
-    </section>
+    <div class="row">
+        <h1 class="one column">MedTracker</h1>
+    </div>
     <article id="calendar" class="article">
         this is where the calendar goes.
     </article>
@@ -22,15 +26,18 @@
             <li>example</li>
         </ul>
 
-        <button id="MedBtn">Add New Medication</button>
+        <button id="MedBtn" class= "button button-primary">Add New Medication</button>
         <div id="MedModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <p>what we put in the modal</p>
             </div>
             
-        <button>Edit Medication</button>
+        <button class="button">Edit Medication</button>
 
     </aside>
+    <script src="script.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src='https://clinicaltables.nlm.nih.gov/autocomplete-lhc-versions/17.0.2/autocomplete-lhc.min.js'></script>
 </body>
 </html>
