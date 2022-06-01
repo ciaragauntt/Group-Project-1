@@ -5,13 +5,21 @@
 
 aside {
     float: right;
-    margin: 0 1.5%;
+    margin: 0;
     width: 30%;
     background-color: green;
 }
 
 article {
-    float: left;
+    float: 0;
     border-color: black;
     /* background-color: darkgreen; */
+}
+
+h2 {
+    text-align: center;
+}
+
+.month {
+    background-color: darkgreen;
 }
