@@ -1,15 +1,17 @@
-.row {
+.title {
     border-color: black;
     background-color: aqua;
 }
+
 aside {
-    float:right;
+    float: right;
     margin: 0 1.5%;
     width: 30%;
     background-color: green;
 }
+
 article {
     float: left;
     border-color: black;
-    background-color: blueviolet;
+    /* background-color: darkgreen; */
 }
