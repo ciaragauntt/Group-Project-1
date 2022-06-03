@@ -1,20 +1,33 @@
 var searchInput = document.getElementById('newMed')
-searchInput.onkeydown = function () {
-    var searchData = document.getElementById('newMed').value
+searchInput.onkeyup = function () {
+    var searchData = searchInput.value
+    console.log(searchData)
     if (searchData.length >= 3) {
-        fetch('https://clinicaltables.nlm.nih.gov/api/rxterms/v3/search?terms=' + searchData)
-            .then(response => response.json())
-            .then(data => { console.log(JSON.stringify(data[1])) })
+        $('#newMed').autocomplete({
+            source: function(request, response) {
+                $.getJSON(
+                    'https://clinicaltables.nlm.nih.gov/api/rxterms/v3/search?terms=' + searchData,
+                    request,
+                    function( data, status, xhr ) {
+                      console.log(data)
+                      response( data[1] );
+                    }
+                )
+            }
+        })       
     }
 }
+
+    
+
 
 const month = new Date();
 month.getMonth();
 
 console.log(month);
 
-//modal stuff
-/*var modal = document.getElementById("MedModal");
+// modal stuff
+var modal = document.getElementById("MedModal");
 var btn = document.getElementById("MedBtn")
 var span = document.getElementsByClassName("close")[0];
 
@@ -37,4 +50,3 @@ btn.onclick = function () {
     var medication = document.getElementById('newMed').value;
     console.log(medication)
 }
-*/
