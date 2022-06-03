@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MedTracker</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="skeleton.css">
     <link rel="stylesheet" href="style.css">
@@ -24,7 +25,7 @@
         <aside id="medlist" class=" row three columns sidebar">
 
             <h2 style="color:white; background-color: #7E58D6"> Medications</h2>
-            <input type="text" id="newMed" placeholder="New Medication...">
+            <input type="text" class="autocomplete" id="newMed" placeholder="New Medication...">
 
             <ul>
                 <li><input type="checkbox"> Example</li>
@@ -175,7 +176,8 @@
             </tr>
         </table>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src='script.js'></script>
 </body>
 
