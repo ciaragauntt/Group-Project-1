@@ -25,7 +25,6 @@
         <aside id="medlist" class=" row three columns sidebar">
 
             <h2 style="color:white; background-color: #7E58D6"> Medications</h2>
-            <input type="text" class="autocomplete" id="newMed" placeholder="New Medication...">
 
             <ul>
                 <li><input type="checkbox"> Example</li>
@@ -35,13 +34,15 @@
             </ul>
 
             <button id="MedBtn" class="button">Add New Medication</button>
+            <button class="button">Edit Medication</button>
             <div id="MedModal" class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <p>what we put in the modal</p>
+                    <p>
+                        <input type="text" class="autocomplete" id="newMed" placeholder="New Medication...">
+                        <button id="saveBtn" class="button">Save</button>
+                    </p>
                 </div>
-
-                <button class="button">Edit Medication</button>
 
         </aside>
 

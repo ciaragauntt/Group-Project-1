@@ -43,10 +43,5 @@ window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none"
     }
-}
+};
 
-var btn = document.getElementById("SaveBtn");
-btn.onclick = function () {
-    var medication = document.getElementById('newMed').value;
-    console.log(medication)
-}
