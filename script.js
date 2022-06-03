@@ -4,27 +4,77 @@ searchInput.onkeyup = function () {
     console.log(searchData)
     if (searchData.length >= 3) {
         $('#newMed').autocomplete({
-            source: function(request, response) {
+            source: function (request, response) {
                 $.getJSON(
                     'https://clinicaltables.nlm.nih.gov/api/rxterms/v3/search?terms=' + searchData,
                     request,
-                    function( data, status, xhr ) {
-                      console.log(data)
-                      response( data[1] );
+                    function (data, status, xhr) {
+                        console.log(data)
+                        response(data[1]);
                     }
                 )
             }
-        })       
+        })
     }
 }
 
-    
+
+const today = new Date();
+const day = today.getDate();
+const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+];
+
+const currentMonth = months[today.getMonth()];
+
+console.log(today);
+console.log(day);
+console.log(currentMonth);
+
+function getCalendar() {
+
+    document.getElementById('monthName').innerText = currentMonth
+};
+
+console.log(getCalendar);
+
+getCalendar();
 
 
-const month = new Date();
-month.getMonth();
+function getDaysInMonth(year, month) {
+    return new Date(year, month, 0).getDate();
+}
+const date = new Date();
+const currentYear = date.getFullYear();
+const newMonth = date.getMonth() + 1;
+const daysInCurrentMonth = getDaysInMonth(currentYear, newMonth);
 
-console.log(month);
+let i = 0;
+while (i <= daysInCurrentMonth) {
+    i++;
+}
+
+
+getDaysInMonth();
+
+console.log(daysInCurrentMonth);
+
+
+
+
+
+
 
 // modal stuff
 var modal = document.getElementById("MedModal");
@@ -44,4 +94,3 @@ window.onclick = function (event) {
         modal.style.display = "none"
     }
 };
-
