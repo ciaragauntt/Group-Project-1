@@ -1,13 +1,17 @@
-.title {
+body {
+    background-color: #B8A9D6;
+}
+
+#title {
+    color: white;
     border-color: black;
-    background-color: aqua;
+    background-color: #422E70;
 }
 
 aside {
     float: right;
-    margin: 0;
-    width: 30%;
-    background-color: green;
+    margin-right: 20px;
+    background-color: #4A4170;
 }
 
 article {
@@ -16,10 +20,40 @@ article {
     /* background-color: darkgreen; */
 }
 
-h2 {
-    text-align: center;
+#month {
+    color: white;
+    background-color: #7E58D6;
+    margin-left: 10px;
 }
 
-.month {
-    background-color: darkgreen;
+#weekday {
+    color: white;
+    background-color: #4A4170;
+    margin-left: 10px;
+}
+
+ul {
+    color: white;
+    margin-left: 10px;
+    list-style: none;
+}
+
+input {
+    margin-left: 10px;
+}
+
+.button {
+    background-color: #7E58D6;
+    color: white;
+    margin-left: 10px;
+}
+
+.days {
+    background-color: #C2AEFC;
+    /* text-align: left; */
+    vertical-align: top;
+    /* padding: 2px; */
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
 }
