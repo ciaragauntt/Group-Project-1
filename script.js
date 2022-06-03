@@ -1,12 +1,17 @@
 var searchInput = document.getElementById('newMed')
-searchInput.onkeydown = function() {
+searchInput.onkeydown = function () {
     var searchData = document.getElementById('newMed').value
-    if(searchData.length >= 3 ) {
+    if (searchData.length >= 3) {
         fetch('https://clinicaltables.nlm.nih.gov/api/rxterms/v3/search?terms=' + searchData)
-        .then(response => response.json())
-        .then(data => {console.log(JSON.stringify(data[1]))})
+            .then(response => response.json())
+            .then(data => { console.log(JSON.stringify(data[1])) })
     }
 }
+
+const month = new Date();
+month.getMonth();
+
+console.log(month);
 
 //modal stuff
 /*var modal = document.getElementById("MedModal");

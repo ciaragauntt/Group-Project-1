@@ -13,44 +13,170 @@
 </head>
 
 <body>
-    <div class="row title">
-        <h1 class="twelve column">MedTracker</h1>
-    </div>
-    <article>
-        <table class="two-thirds column ">
-            <thead class="month">
-                <tr>
-                    <h2>May</h2>
-                </tr>
-            </thead>
+    <div class="row">
+        <div class="twelve column" id="title">
+
+            <h1> <img src="images/MedTracker_Logo_2.jpg" width="100px" height="70px"
+                    style="margin-left: 2px; margin-top: 2px">
+                MedTracker</h1>
+        </div>
+
+        <aside id="medlist" class=" row three columns sidebar">
+
+            <h2 style="color:white; background-color: #7E58D6"> Medications</h2>
+            <input type="text" id="newMed" placeholder="New Medication...">
+
+            <ul>
+                <li><input type="checkbox"> Example</li>
+                <li><input type="checkbox"> Example</li>
+                <li><input type="checkbox"> Example</li>
+                <li><input type="checkbox"> Example</li>
+            </ul>
+
+            <button id="MedBtn" class="button">Add New Medication</button>
+            <div id="MedModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>what we put in the modal</p>
+                </div>
+
+                <button class="button">Edit Medication</button>
+
+        </aside>
+
+
+        <table class="nine columns" id="month">
+            <th><a href="#" id="prev">PREV</a></th>
+            <th style="text-align:center">
+                <h2 id="monthName"><strong>MAY</strong></h2>
+            </th>
+            <th><a href="#" id="next">NEXT</a></th>
         </table>
-    </article>
-    <aside id="medlist" class="sidebar">
 
-        <h2>Medications</h2>
-        <input type="text" id="newMed" placeholder="New Medication...">
 
-        <ul>
-            <input type="checkbox">
-            <li>example</li>
-            <input type="checkbox">
-            <li>example</li>
-            <input type="checkbox">
-            <li>example</li>
-        </ul>
 
-        <button id="MedBtn" class="button button-primary">Add New Medication</button>
-        <div id="MedModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>what we put in the modal</p>
-            </div>
+        <table class="nine columns" id="weekday">
+            <tr>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
 
-            <button class="button">Edit Medication</button>
+            </tr>
+            <tr class="days" id="weekOne">
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black; ">
+                    1</th>
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    2</th>
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    3</th>
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    4</th>
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    5</th>
+                <th
+                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    6</th>
+                <th
+                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    7</th>
+            </tr>
+            <tr class="days" id="weekTwo">
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    8</th>
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    9</th>
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    10</th>
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    11</th>
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    12</th>
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    13</th>
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    14</th>
+            </tr>
+            <tr class="days" id="weekThree">
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    15</th>
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    16</th>
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    17</th>
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    18</th>
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    19</th>
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    20</th>
+                <th
+                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    21</th>
+            </tr>
+            <tr class="days" id="weekFour">
+                <th
+                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    22</th>
+                <th
+                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    23</th>
+                <th
+                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    24</th>
+                <th
+                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    25</th>
+                <th
+                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    26</th>
+                <th
+                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    27</th>
+                <th
+                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;">
+                    28</th>
+            </tr>
+            <tr class="days" id="weekFive">
+                <th
+                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;;">
+                    29</th>
+                <th
+                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;;">
+                    30</th>
+                <th
+                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;;">
+                    31</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </table>
+    </div>
 
-    </aside>
-
-<script src='script.js'></script>
+    <script src='script.js'></script>
 </body>
 
 </html>
