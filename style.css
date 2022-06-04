@@ -57,6 +57,14 @@ input {
     height: 100px;
     border: 1px solid black;
 }
+.dayBlock {
+    text-align:left;
+    vertical-align: top;
+    padding: 2px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
 .modal {
     display: none;
     position:fixed;

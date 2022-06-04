@@ -60,12 +60,18 @@ const currentYear = date.getFullYear();
 const newMonth = date.getMonth() + 1;
 const daysInCurrentMonth = getDaysInMonth(currentYear, newMonth);
 
-let i = 0;
-while (i <= daysInCurrentMonth) {
-    i++;
+function generateCalendar() {
+    const startOfMonth = moment().startOf('month').format('ddd');
+    console.log(startOfMonth)
+    if(startOfMonth === 'Sun'){
+        for (let i = 0; i <= daysInCurrentMonth; i++) {
+        
+        }
+    }
+
+    
 }
-
-
+generateCalendar()
 getDaysInMonth();
 
 console.log(daysInCurrentMonth);
