@@ -26,22 +26,23 @@
 
             <h2 style="color:white; background-color: #7E58D6"> Medications</h2>
 
-            <ul>
-                <li><input type="checkbox"> Example</li>
-                <li><input type="checkbox"> Example</li>
-                <li><input type="checkbox"> Example</li>
-                <li><input type="checkbox"> Example</li>
-            </ul>
+            <div id="RX">
+                <ul id="addedList">
+                    <li class="text">Text</li>
+                </ul>
+            </div>
 
             <button id="MedBtn" class="button">Add New Medication</button>
             <button class="button">Edit Medication</button>
             <div id="MedModal" class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <p>
+
+                    <form id="medForm">
                         <input type="text" class="autocomplete" id="newMed" placeholder="New Medication...">
                         <button id="saveBtn" class="button">Save</button>
-                    </p>
+                    </form>
+
                 </div>
 
         </aside>
