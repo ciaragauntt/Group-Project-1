@@ -92,9 +92,16 @@ var modal = document.getElementById("MedModal");
 var btn = document.getElementById("MedBtn")
 var span = document.getElementsByClassName("close")[0];
 
+btn.onclick=function() {
+    modal.style.display = "block";
+}
+span.onclick = function(){
+    modal.style.display = "none";
+}
+
 window.onclick = function (event) {
     if (event.target == modal) {
-        modal.style.display = "none"
+        modal.style.display = "none";
     }
 };
 //Calendar Modal Function
@@ -337,24 +344,6 @@ function save(){
         localStorage.setItem('data', '[]');
     }
 
-}
-calendarModal();
-
-if (storageInput) {
-    text.textContent = storedInput
-}
-
-storageInput.addEventListener('input', drug => {
-    text.textContent = drug.target.value
-})
-const saveToLocalStorage = () => {
-    localStorage.setItem('MyMedList', JSON.stringify(input))
-}
-savebutton.addEventListener('click', saveToLocalStorage)
-
-var addedList = document.getElementById('addedList');
-
-
     var old_data = JSON.parse(localStorage.getItem('data'))
     old_data.push(new_data);
 
@@ -379,27 +368,5 @@ function addToList(){
 }
 addToList();
 
-
-//const addMed = (ev) => {
-//ev.preventDefault(); //stop the form submitting
-//let med = {
-// newMed: document.getElementById('newMed').value
-//}
-//medication.push(med);
-//document.forms[0].reset(); //to clear the form for the next entry
-
-//localStorage.setItem('MyMedList', JSON.stringify(medication));
-//var list = localStorage.getItem('MyMedList');
-//list = JSON.parse(list);
-//$(document).ready(function(){
-//$("#saveBtn").click(function(){
-//$("#addedList").append(medication);
-//});
-//});
-//document.addEventListener('DOMContentLoaded', () => {
-//document.getElementById('saveBtn').addEventListener('click', addMed);
-//})};
-
-console.log(localStorage);
 
 
