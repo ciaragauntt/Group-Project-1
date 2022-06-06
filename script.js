@@ -68,7 +68,7 @@ function generateCalendar() {
        
         
         }
-    
+    };
 
 generateCalendar()
 getDaysInMonth();
@@ -325,49 +325,33 @@ function calendarModal(){
   } 
 calendarModal()
 
-const storageInput = document.querySelector('#newMed');
-const text = document.querySelector('.text');
-const savebutton = document.querySelector('#saveBtn');
-const storedInput = localStorage.getItem('MyMedList');
+function save(){
+    var new_data = ' ' + document.getElementById('newMed').value;
 
-if(storageInput){
-    text.textContent = storedInput
+    if (localStorage.getItem('data')==null){
+        localStorage.setItem('data', '[]');
+    }
+
+    var old_data = JSON.parse(localStorage.getItem('data'))
+    old_data.push(new_data);
+
+    localStorage.setItem('data', JSON.stringify(old_data));
 }
 
-storageInput.addEventListener('input', drug => {
-    text.textContent = drug.target.value
-})
-const saveToLocalStorage = () => {
-    localStorage.setItem('MyMedList', JSON.stringify(input))
+var addedList = document.getElementById('addedList')
+
+function addToList(){
+    var listItem = document.createElement('li')
+    let med = JSON.parse(localStorage.getItem('data'))
+    let medPrint = document.getElementsByClassName('text')[0];
+    li = listItem.length;
+    //listItem.classList.add('text')
+    //listItem.innerText = JSON.parse(localStorage.getItem([] + 'data'));
+    addedList.appendChild(listItem)
+
+    for (var i = 0; i < med.length; i++ ) {
+       medPrint.innerHTML += "<br>" + med[i];
+    }
 }
-savebutton.addEventListener('click', saveToLocalStorage)
+addToList();
 
-var addedList = document.getElementById('addedList');
-
-console.log(localStorage);
-
-
-//getting medication to save to local storage
-//let medication = [];
-
-//const addMed = (ev) => {
-    //ev.preventDefault(); //stop the form submitting
-    //let med = {
-       // newMed: document.getElementById('newMed').value
-    //}
-    //medication.push(med);
-    //document.forms[0].reset(); //to clear the form for the next entry
-
-    //localStorage.setItem('MyMedList', JSON.stringify(medication));
-    //var list = localStorage.getItem('MyMedList');
-    //list = JSON.parse(list);
-    //$(document).ready(function(){
-    //$("#saveBtn").click(function(){
-        //$("#addedList").append(medication);
-    //});
-//});
-//document.addEventListener('DOMContentLoaded', () => {
-    //document.getElementById('saveBtn').addEventListener('click', addMed);
-//})};
-
-console.log(localStorage);
