@@ -100,10 +100,12 @@ span.onclick = function(){
 }
 
 window.onclick = function (event) {
+    event.preventDefault()
     if (event.target == modal) {
         modal.style.display = "none";
     }
 };
+
 //Calendar Modal Function
 function calendarModal() {
     const calendarModal = document.getElementById('calendarModal')
@@ -147,176 +149,211 @@ function calendarModal() {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 1
         console.log(calendarDayClicked)
+        calendarDay1()
     }
     calendar2.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 2
         console.log(calendarDayClicked)
+        calendarDay2()
     }
     calendar3.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 3
         console.log(calendarDayClicked)
+        calendarDay3()
     }
     calendar4.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 4
         console.log(calendarDayClicked)
+        calendarDay4()
     }
     calendar5.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 5
         console.log(calendarDayClicked)
+        calendarDay5()
     }
     calendar6.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 6
         console.log(calendarDayClicked)
+        calendarDay6()
     }
     calendar7.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 7
         console.log(calendarDayClicked)
+        calendarDay7()
     }
     calendar8.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 8
         console.log(calendarDayClicked)
+        calendarDay8()
     }
     calendar9.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 9
         console.log(calendarDayClicked)
+        calendarDay9()
     }
     calendar10.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 10
         console.log(calendarDayClicked)
+        calendarDay10()
     }
     calendar11.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 11
         console.log(calendarDayClicked)
+        calendarDay11()
     }
     calendar12.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 12
         console.log(calendarDayClicked)
+        calendarDay12()
     }
     calendar13.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 13
         console.log(calendarDayClicked)
+        calendarDay13()
     }
     calendar14.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 14
         console.log(calendarDayClicked)
+        calendarDay14()
     }
     calendar15.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 15
         console.log(calendarDayClicked)
+        calendarDay15()
     }
     calendar16.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 16
         console.log(calendarDayClicked)
+        calendarDay16()
     }
     calendar17.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 17
         console.log(calendarDayClicked)
+        calendarDay17()
     }
     calendar18.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 18
         console.log(calendarDayClicked)
+        calendarDay18()
     }
     calendar19.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 19
         console.log(calendarDayClicked)
+        calendarDay19()
     }
     calendar20.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 20
         console.log(calendarDayClicked)
+        calendarDay20()
     }
     calendar21.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 21
         console.log(calendarDayClicked)
+        calendarDay21()
     }
     calendar22.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 22
         console.log(calendarDayClicked)
+        calendarDay22()
     }
     calendar23.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 23
         console.log(calendarDayClicked)
+        calendarDay23()
     }
     calendar24.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 24
         console.log(calendarDayClicked)
+        calendarDay24()
     }
     calendar25.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 25
         console.log(calendarDayClicked)
+        calendarDay25()
     }
     calendar26.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 26
         console.log(calendarDayClicked)
+        calendarDay26()
     }
     calendar27.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 27
         console.log(calendarDayClicked)
+        calendarDay27()
     }
     calendar28.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 28
         console.log(calendarDayClicked)
+        calendarDay28()
     }
     calendar29.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 29
         console.log(calendarDayClicked)
+        calendarDay29()
     }
     calendar30.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 30
         console.log(calendarDayClicked)
+        calendarDay30()
     }
     calendar31.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 31
         console.log(calendarDayClicked)
+        calendarDay31()
     }
     calendar32.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 32
         console.log(calendarDayClicked)
+        calendarDay32()
     }
     calendar33.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 33
         console.log(calendarDayClicked)
+        calendarDay33()
     }
     calendar34.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 34
         console.log(calendarDayClicked)
+        calendarDay34()
     }
     calendar35.onclick = function () {
         calendarModal.style.display = 'block'
         let calendarDayClicked = 35
         console.log(calendarDayClicked)
+        calendarDay35()
     }
 
     span.onclick = function () {
@@ -349,6 +386,7 @@ function save(){
 
     localStorage.setItem('data', JSON.stringify(old_data));
 }
+calendarModal();
 
 var addedList = document.getElementById('addedList')
 
@@ -362,11 +400,105 @@ function addToList(){
     //listItem.innerText = JSON.parse(localStorage.getItem([] + 'data'));
     addedList.appendChild(listItem)
 
+    let a = 0;
     for (var i = 0; i < med.length; i++ ) {
-       medPrint.innerHTML += "<br>" + med[i];
+        a++
+        medPrint.innerHTML += "<br>" + med[i];
+        
     }
 }
 addToList();
 
+function addToSelectMenu(){
+    var selectMenu = document.getElementById('medicationList')
+    let med = JSON.parse(localStorage.getItem('data'))
+    let a = 0;
+    for (var i = 0; i < med.length; i++) {
+        a++
+        var option = document.createElement('option')
+        option.setAttribute('id', 'selectOption' + a)
+        selectMenu.appendChild(option)
+        var selectOption = document.getElementById('selectOption' + a)
+        selectOption.innerHTML = med[i]
+        
+    }
+    
+}
+addToSelectMenu()
+
+function calendarDay1() {
+    const calendarModal = document.getElementById('calendarModal')
+    var btn = document.getElementById('calendarSaveBtn')
+    btn.onclick = function (){
+        var medSelect = document.getElementById('medicationList')
+        var medOption = medSelect.options[medSelect.selectedIndex]
+
+        var timeInput = document.getElementById('time-input').value
+
+        var colorSelect = document.getElementById('colorList')
+        var colorOption = colorSelect.options[colorSelect.selectedIndex].value
+        console.log(colorOption)
+
+        const calendar1 = document.getElementById('dayBlockOne')
+        var medElement = document.createElement('p')
+        var timeElement = document.createElement('p')
+        calendar1.appendChild(medElement)
+        calendar1.appendChild(timeElement)
+        medElement.appendChild(medOption)
+        timeElement.append(timeInput)
+        localStorage.setItem('medElement', medElement)
+        localStorage.setItem('timeElement', timeElement)
+        localStorage.setItem('colorOption', colorOption)
+
+        if (colorOption === 'red') {
+            medElement.style = 'background-color:var(--red); border: 1px solid black; border-bottom: 0; border-top-left-radius:5px; border-top-right-radius:5px'
+            timeElement.style = 'background-color:var(--red); border: 1px solid black; border-top: 0; border-bottom-left-radius:5px; border-bottom-right-radius:5px'
+        } else if (colorOption === 'orange') {
+            medElement.style = 'background-color:var(--orange); border: 1px solid black; border-bottom: 0; border-top-left-radius:5px; border-top-right-radius:5px'
+            timeElement.style = 'background-color:var(--orange); border: 1px solid black; border-top: 0; border-bottom-left-radius:5px; border-bottom-right-radius:5px'
+        } else if (colorOption === 'yellow') {
+            medElement.style = 'background-color:var(--yellow); border: 1px solid black; border-bottom: 0; border-top-left-radius:5px; border-top-right-radius:5px'
+            timeElement.style = 'background-color:var(--yellow); border: 1px solid black; border-top: 0; border-bottom-left-radius:5px; border-bottom-right-radius:5px'
+        } else if (colorOption === 'green') {
+            medElement.style = 'background-color:var(--green); border: 1px solid black; border-bottom: 0; border-top-left-radius:5px; border-top-right-radius:5px'
+            timeElement.style = 'background-color:var(--green); border: 1px solid black; border-top: 0; border-bottom-left-radius:5px; border-bottom-right-radius:5px'
+        } else if (colorOption === 'blue') {
+            medElement.style = 'background-color:var(--blue); border: 1px solid black; border-bottom: 0; border-top-left-radius:5px; border-top-right-radius:5px'
+            timeElement.style = 'background-color:var(--blue); border: 1px solid black; border-top: 0; border-bottom-left-radius:5px; border-bottom-right-radius:5px'
+        } else if (colorOption === 'purple') {
+            medElement.style = 'background-color:var(--purple); border: 1px solid black; border-bottom: 0; border-top-left-radius:5px; border-top-right-radius:5px'
+            timeElement.style = 'background-color:var(--purple); border: 1px solid black; border-top: 0; border-bottom-left-radius:5px; border-bottom-right-radius:5px'
+        }
+        
+        calendarModal.style.display = 'none'
+    }
+}
+function saveCalMed1() {
+    const calendar1 = document.getElementById('dayBlockOne')
+    var medElement = localStorage.getItem('medElement')
+    var timeElement = localStorage.getItem('timeElement')
+    var colorOption = localStorage.getItem('colorOption')
+    calendar1.append(medElement)
+    calendar1.append(timeElement)
+    if (colorOption === 'red') {
+        medElement.style = 'background-color:var(--red); border: 1px solid black; border-bottom: 0; border-top-left-radius:5px; border-top-right-radius:5px'
+        timeElement.style = 'background-color:var(--red); border: 1px solid black; border-top: 0; border-bottom-left-radius:5px; border-bottom-right-radius:5px'
+    } else if (colorOption === 'orange') {
+        medElement.style = 'background-color:var(--orange); border: 1px solid black; border-bottom: 0; border-top-left-radius:5px; border-top-right-radius:5px'
+        timeElement.style = 'background-color:var(--orange); border: 1px solid black; border-top: 0; border-bottom-left-radius:5px; border-bottom-right-radius:5px'
+    } else if (colorOption === 'yellow') {
+        medElement.style = 'background-color:var(--yellow); border: 1px solid black; border-bottom: 0; border-top-left-radius:5px; border-top-right-radius:5px'
+        timeElement.style = 'background-color:var(--yellow); border: 1px solid black; border-top: 0; border-bottom-left-radius:5px; border-bottom-right-radius:5px'
+    } else if (colorOption === 'green') {
+        medElement.style = 'background-color:var(--green); border: 1px solid black; border-bottom: 0; border-top-left-radius:5px; border-top-right-radius:5px'
+        timeElement.style = 'background-color:var(--green); border: 1px solid black; border-top: 0; border-bottom-left-radius:5px; border-bottom-right-radius:5px'
+    } else if (colorOption === 'blue') {
+        medElement.style = 'background-color:var(--blue); border: 1px solid black; border-bottom: 0; border-top-left-radius:5px; border-top-right-radius:5px'
+        timeElement.style = 'background-color:var(--blue); border: 1px solid black; border-top: 0; border-bottom-left-radius:5px; border-bottom-right-radius:5px'
+    } else if (colorOption === 'purple') {
+        medElement.style = 'background-color:var(--purple); border: 1px solid black; border-bottom: 0; border-top-left-radius:5px; border-top-right-radius:5px'
+        timeElement.style = 'background-color:var(--purple); border: 1px solid black; border-top: 0; border-bottom-left-radius:5px; border-bottom-right-radius:5px'
+    }
 
 
+}

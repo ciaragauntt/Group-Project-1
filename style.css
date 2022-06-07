@@ -1,3 +1,16 @@
+:root {
+    --red: #D64E3E;
+    --orange: #FF8519;
+    --yellow: #F2EA00;
+    --green: #5BC73A;
+    --blue: #3E5FD6;
+    --purple: #7E58D6;
+}
+
+
+
+
+
 body {
     background-color: #B8A9D6;
 }
@@ -84,19 +97,45 @@ input {
   }
   
   /* The Close Button */
-  .close {
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
   
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
   }
-  select {
+select {
       min-width: 15%;
   }
+.red {
+    background-color: var(--red);
+    color: white;
+
+  }
+.orange {
+    background-color: var(--orange);
+    color: white;
+    }
+
+.yellow {
+    background-color: var(--yellow);
+    color: white;
+}
+.green {
+    background-color: var(--green);
+    color: white;
+}
+.blue {
+    background-color: var(--blue);
+    color: white;
+}
+.purple {
+    background-color: var(--purple);
+    color: white;
+}
