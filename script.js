@@ -3747,3 +3747,11 @@ function saveCalMed35() {
     }
 }
 saveCalMed35()
+
+var clearBtn = document.getElementById('clearBtn')
+
+clearBtn.onclick = function () {
+    localStorage.clear()
+    console.log('Local Storage Cleared!')
+    location.reload()
+}
