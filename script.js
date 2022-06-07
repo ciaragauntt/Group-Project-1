@@ -396,13 +396,14 @@ function addToList(){
     let med = JSON.parse(localStorage.getItem('data'))
     let medPrint = document.getElementsByClassName('text')[0];
     li = listItem.length;
-    //listItem.classList.add('text')
-    //listItem.innerText = JSON.parse(localStorage.getItem([] + 'data'));
+    
+
     addedList.appendChild(listItem)
 
     for (var i = 0; i < med.length; i++ ) {
         medPrint.innerHTML += "<br>" + med[i];
     }
+   
 }
 addToList();
 
@@ -3748,6 +3749,7 @@ function saveCalMed35() {
 }
 saveCalMed35()
 
+
 var clearBtn = document.getElementById('clearBtn')
 
 clearBtn.onclick = function () {
@@ -3755,3 +3757,5 @@ clearBtn.onclick = function () {
     console.log('Local Storage Cleared!')
     location.reload()
 }
+
+
