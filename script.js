@@ -54,7 +54,6 @@ function loadCalendar() {
     document.getElementById('monthDisplay').innerText = `${dt.toLocaleDateString('en-us', { month: 'long' })} ${year}`;
 }
 
-
 // for (let i = 1; i <= paddingDays + daysInMonth; i++) {
 //     const dayNumber = document.createElement('textnode');
 //     dayNumber.classList.add('dayBlock');
@@ -327,6 +326,17 @@ function calendarModal() {
             }
         }
     }
+
+  } 
+calendarModal()
+
+function save(){
+    var new_data = ' ' + document.getElementById('newMed').value;
+
+    if (localStorage.getItem('data')==null){
+        localStorage.setItem('data', '[]');
+    }
+
 }
 calendarModal();
 
@@ -344,11 +354,31 @@ savebutton.addEventListener('click', saveToLocalStorage)
 
 var addedList = document.getElementById('addedList');
 
-console.log(localStorage);
+
+    var old_data = JSON.parse(localStorage.getItem('data'))
+    old_data.push(new_data);
+
+    localStorage.setItem('data', JSON.stringify(old_data));
+}
+
+var addedList = document.getElementById('addedList')
 
 
-//getting medication to save to local storage
-//let medication = [];
+function addToList(){
+    var listItem = document.createElement('li')
+    let med = JSON.parse(localStorage.getItem('data'))
+    let medPrint = document.getElementsByClassName('text')[0];
+    li = listItem.length;
+    //listItem.classList.add('text')
+    //listItem.innerText = JSON.parse(localStorage.getItem([] + 'data'));
+    addedList.appendChild(listItem)
+
+    for (var i = 0; i < med.length; i++ ) {
+       medPrint.innerHTML += "<br>" + med[i];
+    }
+}
+addToList();
+
 
 //const addMed = (ev) => {
 //ev.preventDefault(); //stop the form submitting
@@ -371,4 +401,5 @@ console.log(localStorage);
 //})};
 
 console.log(localStorage);
+
 
