@@ -49,11 +49,11 @@
 
 
         <table class="nine columns" id="month">
-            <th><a href="#" id="prev">PREV</a></th>
+            <th><button id="prevButton" class="button">PREV</button></th>
             <th style="text-align:center">
-                <h2 id="monthName"><strong>MAY</strong></h2>
+                <h2 id="monthDisplay"></h2>
             </th>
-            <th><a href="#" id="next">NEXT</a></th>
+            <th><button id="nextButton" class="button">NEXT</button></th>
         </table>
 
 
@@ -70,131 +70,69 @@
 
             </tr>
             <tr class="days" id="weekOne">
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockOne">
-                    1</th>
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockTwo">
-                    2</th>
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockThree">
-                    3</th>
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockFour">
-                    4</th>
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockFive">
-                    5</th>
-                <th
-                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id='dayBlockSix'>
-                    6</th>
-                <th
-                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockSeven">
-                    7</th>
+                <th class="dayBlock" id="dayBlockOne"></th>
+                <th class="dayBlock" id="dayBlockTwo"></th>
+                <th class="dayBlock" id="dayBlockThree"></th>
+                <th class="dayBlock" id="dayBlockFour">1</th>
+                <th class="dayBlock" id="dayBlockFive">2</th>
+                <th class="dayBlock" id='dayBlockSix'>3</th>
+                <th class="dayBlock" id="dayBlockSeven">4</th>
             </tr>
             <tr class="days" id="weekTwo">
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockEight">
-                    8</th>
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockNine">
-                    9</th>
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockTen">
-                    10</th>
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockEleven">
-                    11</th>
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockTwelve">
-                    12</th>
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockThirteen">
-                    13</th>
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockFourteen">
-                    14</th>
+                <th class="dayBlock" id="dayBlockEight">5</th>
+                <th class="dayBlock" id="dayBlockNine">6</th>
+                <th class="dayBlock" id="dayBlockTen">7</th>
+                <th class="dayBlock" id="dayBlockEleven">8</th>
+                <th class="dayBlock" id="dayBlockTwelve">9</th>
+                <th class="dayBlock" id="dayBlockThirteen">10</th>
+                <th class="dayBlock" id="dayBlockFourteen">11</th>
             </tr>
             <tr class="days" id="weekThree">
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockFifteen">
-                    15</th>
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockSixteen">
-                    16</th>
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockSeventeen">
-                    17</th>
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockEighteen">
-                    18</th>
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockNineteen">
-                    19</th>
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockTwenty">
-                    20</th>
-                <th
-                    style=" text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockTwentyOne">
-                    21</th>
+                <th class="dayBlock" id="dayBlockFifteen">12</th>
+                <th class="dayBlock" id="dayBlockSixteen">13</th>
+                <th class="dayBlock" id="dayBlockSeventeen">14</th>
+                <th class="dayBlock" id="dayBlockEighteen">15</th>
+                <th class="dayBlock" id="dayBlockNineteen">16</th>
+                <th class="dayBlock" id="dayBlockTwenty">17</th>
+                <th class="dayBlock" id="dayBlockTwentyOne">18</th>
             </tr>
             <tr class="days" id="weekFour">
-                <th
-                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockTwentyTwo">
-                    22</th>
-                <th
-                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockTwentyThree">
-                    23</th>
-                <th
-                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockTwentyFour">
-                    24</th>
-                <th
-                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockTwentyFive">
-                    25</th>
-                <th
-                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockTwentySix">
-                    26</th>
-                <th
-                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id='dayBlockTwentySeven'>
-                    27</th>
-                <th
-                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockTwentyEight">
-                    28</th>
+                <th class="dayBlock" id="dayBlockTwentyTwo">19</th>
+                <th class="dayBlock" id="dayBlockTwentyThree">20</th>
+                <th class="dayBlock" id="dayBlockTwentyFour">21</th>
+                <th class="dayBlock" id="dayBlockTwentyFive">22</th>
+                <th class="dayBlock" id="dayBlockTwentySix">23</th>
+                <th class="dayBlock" id='dayBlockTwentySeven'>24</th>
+                <th class="dayBlock" id="dayBlockTwentyEight">25</th>
             </tr>
             <tr class="days" id="weekFive">
-                <th
-                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockTwentyNine">
-                    29</th>
-                <th
-                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockThirty">
-                    30</th>
-                <th
-                    style="  text-align:left; vertical-align: top;padding:2px; width: 100px; height: 100px; border:1px solid black;" id="dayBlockThirtyOne">
-                    31</th>
-                <th class="dayBlock" id="dayBlockThirtyTwo"></th>
-                <th class="dayBlock" id="dayBlockThirtyThree"></th>
+                <th class="dayBlock" id="dayBlockTwentyNine">26</th>
+                <th class="dayBlock" id="dayBlockThirty">27</th>
+                <th class="dayBlock" id="dayBlockThirtyOne">28</th>
+                <th class="dayBlock" id="dayBlockThirtyTwo">29</th>
+                <th class="dayBlock" id="dayBlockThirtyThree">30</th>
                 <th class="dayBlock" id="dayBlockThirtyFour"></th>
                 <th class="dayBlock" id="dayBlockThirtyFive"></th>
-                    <div id="calendarModal" class="modal">
-                        <div class="modal-content">
-                            <span class="close" id="close">&times;</span>
-                            <p>
-                                <select name='medicationList' id="medicationList" placeholder="Medication">
-                                    <option></option>
-                                    <option></option>
-                                    <option></option>
-                                </select>
-                                <input type="text" id="time-input" placeholder="12:00PM">
-                                <select name="colorList" id="colorList" placeholder="Color">
-                                    <option></option>
-                                    <option></option>
-                                    <option></option>
-                                    <option></option>
-                                    <option></option>
-                                    <option></option>
-                                </select>
-                                <button id="calendarSaveBtn" class="button">Save</button>
-                            </p>
+                <div id="calendarModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="close">&times;</span>
+                        <p>
+                            <select name='medicationList' id="medicationList" placeholder="Medication">
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                            </select>
+                            <input type="text" id="time-input" placeholder="12:00PM">
+                            <select name="colorList" id="colorList" placeholder="Color">
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                            </select>
+                            <button id="calendarSaveBtn" class="button">Save</button>
+                        </p>
                     </div>
             </tr>
         </table>
