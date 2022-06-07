@@ -54,23 +54,6 @@ function loadCalendar() {
     document.getElementById('monthDisplay').innerText = `${dt.toLocaleDateString('en-us', { month: 'long' })} ${year}`;
 }
 
-const date = new Date();
-const currentYear = date.getFullYear();
-const newMonth = date.getMonth() + 1;
-const daysInCurrentMonth = getDaysInMonth(currentYear, newMonth);
-
-function generateCalendar() {
-    const startOfMonth = moment().startOf('month').format('ddd');
-    console.log(startOfMonth)
-    if(startOfMonth === 'Sun'){
-       
-        
-        }
-    };
-
-
-
-
 // for (let i = 1; i <= paddingDays + daysInMonth; i++) {
 //     const dayNumber = document.createElement('textnode');
 //     dayNumber.classList.add('dayBlock');
